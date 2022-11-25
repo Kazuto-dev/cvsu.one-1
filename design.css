@@ -103,7 +103,7 @@ nav {
 
 .main-lower-nav-bar {
     background: #FFFFFF;
-    height: 85px;
+    height: 100%;
     border-bottom: 5px solid #29711D;
     display: flex;
     justify-content: center;
@@ -113,6 +113,11 @@ nav {
 
 .main-lower-nav-bar .lower-nav-bar .cvsu-logo {
     grid-column: 1/3;
+}
+
+.main-lower-nav-bar .lower-nav-bar .active {
+    background-color: #29711D;
+    color: #FFFFFF;
 }
 
 .main-lower-nav-bar .lower-nav-bar a {
