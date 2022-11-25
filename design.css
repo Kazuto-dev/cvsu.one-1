@@ -521,11 +521,17 @@ footer {
 
 
 .reg_courses h1{
-    font-size: 16pt;
+    font-size: 18pt;
+    font-weight: 600;
 }
 
 .reg_courses ul li{
     list-style: none;
+}
+
+.reg_courses div{
+    padding: 20px;
+    border-bottom: solid gray 1px;
 }
 
 

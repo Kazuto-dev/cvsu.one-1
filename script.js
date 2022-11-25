@@ -27,7 +27,7 @@ function showCvSUCourses() {
 
     var btn = document.getElementById("courses-btn")
     var content = document.getElementById("reg_courses")
-
+    btn.style.color = "#29711D";
     content.style.display = "block"
 }
 
@@ -37,5 +37,6 @@ function hideCvSUCourses() {
     var content = document.getElementById("reg_courses")
 
     content.style.display = "none"
+    btn.style.color = "#1D1D1D";
 
 }
