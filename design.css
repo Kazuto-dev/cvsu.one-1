@@ -81,7 +81,7 @@ nav {
 }
 
 .main-upper-nav-bar .upper-nav-bar .cvsuone-logo img {
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -113,6 +113,10 @@ nav {
 
 .main-lower-nav-bar .lower-nav-bar .cvsu-logo {
     grid-column: 1/3;
+}
+
+.main-lower-nav-bar .lower-nav-bar .cvsu-logo img{
+    padding: 20px;
 }
 
 .main-lower-nav-bar .lower-nav-bar .active {
@@ -242,24 +246,28 @@ nav {
 
 }
 
-#content2 {
+#guides {
     display: none;
 }
 
-.semi-content {
+#reg_courses{
+    grid-column: 1;
+}
+
+.guidelines {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 25px;
 
 }
 
-.semi-content p {
+.guidelines p {
     font-size: 12pt;
     font-weight: 400;
     color: #1D1D1D;
 }
 
-.semi-content h1:first-child {
+.guidelines h1:first-child {
     grid-column: 1/7;
 
     font-style: normal;
@@ -269,14 +277,14 @@ nav {
     color: #1D1D1D;
 }
 
-.semi-content p:nth-child(2) {
+.guidelines p:nth-child(2) {
     grid-column: 1/7;
     margin-bottom: 50px;
     font-style: normal;
     line-height: 25px;
 }
 
-.semi-content h1:nth-child(3) {
+.guidelines h1:nth-child(3) {
     grid-column: 1/7;
 
     font-style: normal;
@@ -286,28 +294,28 @@ nav {
     color: #1D1D1D;
 }
 
-.semi-content p:nth-child(4) {
+.guidelines p:nth-child(4) {
     grid-column: 1/3;
     font-style: normal;
     font-weight: 700;
     line-height: 25px;
 }
 
-.semi-content p:nth-child(5) {
+.guidelines p:nth-child(5) {
     grid-column: 3/7;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
 }
 
-.semi-content p:nth-child(6) {
+.guidelines p:nth-child(6) {
     grid-column: 1/3;
     font-style: normal;
     font-weight: 700;
     line-height: 25px;
 }
 
-.semi-content div {
+.guidelines div {
     grid-column: 3/7;
 
     font-style: normal;
@@ -316,7 +324,7 @@ nav {
     padding-bottom: 50px;
 }
 
-.semi-content h1:nth-child(8) {
+.guidelines h1:nth-child(8) {
     grid-column: 1/7;
 
     font-style: normal;
@@ -324,7 +332,7 @@ nav {
     line-height: 25px;
 }
 
-.semi-content p:nth-child(9) {
+.guidelines p:nth-child(9) {
     grid-column: 1/7;
 
 
@@ -398,7 +406,7 @@ nav {
     background-color: #29711D;
     text-align: center;
     padding: 20px;
-    display: none;
+    display: block;
 }
 
 .end-cta-btn {
@@ -498,10 +506,27 @@ footer {
     text-align: center;
 }
 
-/* MJ MILLANES */
+/* CvSU COURSES SIDE */
+
+#reg_courses{
+    display: none;
+
+}
+
+#reg_courses{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 25px;
+}
 
 
+.reg_courses h1{
+    font-size: 16pt;
+}
 
+.reg_courses ul li{
+    list-style: none;
+}
 
 
 
