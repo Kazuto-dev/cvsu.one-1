@@ -1,0 +1,545 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Noto Sans';
+}
+
+nav a {
+    text-decoration: none;
+
+}
+
+nav {
+    width: 100%;
+
+    /* Pay special attention here! */
+    position: sticky;
+    top: 0px;
+}
+
+.main-upper-nav-bar,
+.main-lower-nav-bar {
+    width: 100%;
+    height: 100% auto;
+}
+
+.main-upper-nav-bar {
+    background-color: black;
+}
+
+.upper-nav-bar,
+.lower-nav-bar,
+.main-content,
+.second-foot-content {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 14px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 50px;
+
+
+
+}
+
+.upper-nav-bar {
+
+    height: 50px;
+
+
+}
+
+.main-upper-nav-bar .upper-nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+
+}
+
+.main-upper-nav-bar .upper-nav-bar div {
+
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+}
+
+.main-upper-nav-bar .upper-nav-bar .cvsuone-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 7;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.main-upper-nav-bar .upper-nav-bar .cvsuone-logo img {
+    width: 90%;
+    height: auto;
+}
+
+.main-upper-nav-bar .upper-nav-bar .cta-btn {
+    grid-column: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003C7A;
+    height: 100%;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+
+
+.main-lower-nav-bar {
+    background: #FFFFFF;
+    height: 85px;
+    border-bottom: 5px solid #29711D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-lower-nav-bar .lower-nav-bar .cvsu-logo {
+    grid-column: 1/3;
+}
+
+.main-lower-nav-bar .lower-nav-bar a {
+    color: black;
+    font-size: 11pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.main-lower-nav-bar .lower-nav-bar .cvsu-logo img {
+    width: 100%;
+}
+
+.main-lower-nav-bar .lower-nav-bar a:last-child {
+    grid-column: 8;
+    text-align: center;
+}
+
+.main-lower-nav-bar .lower-nav-bar a:nth-child(4) {
+    grid-column: 7;
+    text-align: center;
+}
+
+.main-lower-nav-bar .lower-nav-bar a:nth-child(3) {
+    grid-column: 6;
+    text-align: center;
+}
+
+.main-lower-nav-bar .lower-nav-bar a:nth-child(2) {
+    grid-column: 5;
+    text-align: center;
+}
+
+
+
+.home-hero-main {
+    width: 100%;
+    background: url(assets/cvsudroneshot.png) rgba(41, 113, 29, 0.9);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+
+.home-hero-main h1 {
+    color: white;
+    text-align: center;
+}
+
+.home-hero-main h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14pt;
+    padding-bottom: 20px;
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+}
+
+.home-hero-main h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44pt;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+}
+
+
+.home-hero-main hr {
+    text-decoration: none;
+    width: 125%;
+    margin-top: 25px;
+    border-bottom: solid white;
+}
+
+.main-content {
+    margin-top: 50px;
+
+
+}
+
+.main-content .main-sidepanel {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+.main-content .main-sidepanel a {
+    padding: 20px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14pt;
+    color: #1D1D1D;
+    text-decoration: none;
+    border-bottom: solid rgb(187, 187, 187) 1px;
+
+}
+
+.side-content {
+
+    grid-column: 3/9;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+#content2 {
+    display: none;
+}
+
+.semi-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 25px;
+
+}
+
+.semi-content p {
+    font-size: 12pt;
+    font-weight: 400;
+    color: #1D1D1D;
+}
+
+.semi-content h1:first-child {
+    grid-column: 1/7;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    color: #1D1D1D;
+}
+
+.semi-content p:nth-child(2) {
+    grid-column: 1/7;
+    margin-bottom: 50px;
+    font-style: normal;
+    line-height: 25px;
+}
+
+.semi-content h1:nth-child(3) {
+    grid-column: 1/7;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    color: #1D1D1D;
+}
+
+.semi-content p:nth-child(4) {
+    grid-column: 1/3;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.semi-content p:nth-child(5) {
+    grid-column: 3/7;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.semi-content p:nth-child(6) {
+    grid-column: 1/3;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.semi-content div {
+    grid-column: 3/7;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    padding-bottom: 50px;
+}
+
+.semi-content h1:nth-child(8) {
+    grid-column: 1/7;
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.semi-content p:nth-child(9) {
+    grid-column: 1/7;
+
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    margin-top: 100px;
+}
+
+.main p {
+    padding: 20px 0px;
+    font-weight: 500;
+    border-bottom: solid rgb(187, 187, 187) 1px;
+}
+
+.main h3 {
+    background-color: #29711D;
+    width: 100%;
+    color: white;
+    padding: 10px 0px;
+}
+
+.main h1:first-child {
+    grid-column: 1/4;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    color: #1D1D1D;
+}
+
+.main h3:nth-child(2) {
+    grid-column: 1;
+}
+
+.main h3:nth-child(3) {
+    grid-column: 2;
+}
+
+.main .guide-note {
+    grid-column: 1/4;
+    border: none;
+}
+
+.step-num {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #000000;
+
+}
+
+.inside-note {
+    color: #003C7A;
+}
+
+
+.end-cta-btn {
+    margin: 50px auto 75px;
+    width: 480px;
+    background-color: #29711D;
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+
+.end-cta-btn {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+footer {
+    width: 100%;
+    margin-top: 200px;
+
+}
+
+.footer-secondary {
+    background-color: #29711D;
+    height: 270px;
+    margin: auto;
+
+}
+
+.second-foot-content {
+    align-content: center;
+    height: 100%;
+}
+
+.second-foot-content img {
+    grid-column: 1/3;
+    width: 164px;
+    display: flex;
+    align-self: center;
+}
+
+.second-foot-content .soc-links {
+    display: flex;
+    flex-direction: column;
+    grid-column: 6/9;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.second-foot-content .soc-links a,
+.second-foot-content .soc-links span {
+    text-decoration: none;
+    color: white;
+}
+
+
+.second-foot-content .tagline {
+    height: 100%;
+    font-size: 16px;
+    grid-column: 3/6;
+    color: white;
+    align-self: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-main,.footer-main div {
+    height: 270px;
+    background: #171717;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    color: white;
+}
+.footer-main{
+    justify-content: center
+}
+.footer-main div{
+    height: 200px;
+    justify-content: space-around;
+}
+
+.footer-main div img {
+    width: auto;
+    height: 60px;
+}
+
+.footer-main div ul li {
+    list-style: none;
+    text-align: center;
+
+}
+
+.footer-main div ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+/* MJ MILLANES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+
+    .main-upper-nav-bar .upper-nav-bar a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11pt;
+
+    }
+}
