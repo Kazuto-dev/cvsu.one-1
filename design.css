@@ -3,7 +3,11 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Noto Sans';
+    scroll-behavior: smooth;
+
 }
+
+
 
 nav a {
     text-decoration: none;
@@ -32,7 +36,9 @@ nav {
 .upper-nav-bar,
 .lower-nav-bar,
 .main-content,
-.second-foot-content {
+.second-foot-content,
+.reg-tab,
+.form-grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-column-gap: 14px;
@@ -46,8 +52,13 @@ nav {
 
 .upper-nav-bar {
 
-    height: 50px;
+    height: 100% auto;
 
+
+}
+
+.lower-nav-bar {
+    height: 100% auto;
 
 }
 
@@ -57,7 +68,7 @@ nav {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 10pt;
 
 }
 
@@ -78,7 +89,7 @@ nav {
     grid-column: 7;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 5px;
 }
 
 .main-upper-nav-bar .upper-nav-bar .cvsuone-logo img {
@@ -93,11 +104,10 @@ nav {
     align-items: center;
     background-color: #003C7A;
     height: 100%;
-
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 11pt;
 }
 
 
@@ -105,7 +115,7 @@ nav {
 .main-lower-nav-bar {
     background: #FFFFFF;
     height: 100%;
-    border-bottom: 5px solid #29711D;
+    /* border-bottom: 5px solid #29711D; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,11 +127,12 @@ nav {
 }
 
 .main-lower-nav-bar .lower-nav-bar .cvsu-logo img {
-    padding: 20px;
+    padding: 10px;
 }
 
 .main-lower-nav-bar .lower-nav-bar .active {
     background-color: #29711D;
+    height: 100%;
     color: #FFFFFF;
 }
 
@@ -135,7 +146,7 @@ nav {
 }
 
 .main-lower-nav-bar .lower-nav-bar .cvsu-logo img {
-    width: 100%;
+    width: 80%;
 }
 
 .main-lower-nav-bar .lower-nav-bar a:last-child {
@@ -184,7 +195,7 @@ nav {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 14pt;
+    font-size: 14px;
     padding-bottom: 20px;
     text-align: center;
     letter-spacing: -0.04em;
@@ -199,7 +210,7 @@ nav {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 44pt;
+    font-size: 44px;
     line-height: 100%;
     letter-spacing: -0.04em;
 }
@@ -231,7 +242,7 @@ nav {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 14pt;
+    font-size: 14px;
     color: #1D1D1D;
     text-decoration: none;
     border-bottom: solid rgb(187, 187, 187) 1px;
@@ -263,7 +274,7 @@ nav {
 }
 
 .guidelines p {
-    font-size: 12pt;
+    font-size: 11pt;
     font-weight: 400;
     color: #1D1D1D;
 }
@@ -273,7 +284,7 @@ nav {
 
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 20pt;
     line-height: 100%;
     color: #1D1D1D;
 }
@@ -290,7 +301,7 @@ nav {
 
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 20pt;
     line-height: 100%;
     color: #1D1D1D;
 }
@@ -355,6 +366,7 @@ nav {
 .main p {
     padding: 20px 0px;
     font-weight: 500;
+    font-size: 11pt;
     border-bottom: solid rgb(187, 187, 187) 1px;
 }
 
@@ -368,7 +380,7 @@ nav {
 .main h1:first-child {
     grid-column: 1/4;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 20pt;
     line-height: 100%;
     color: #1D1D1D;
 }
@@ -389,7 +401,7 @@ nav {
 .step-num {
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 11pt;
     line-height: 25px;
 
     color: #000000;
@@ -412,7 +424,7 @@ nav {
 
 .end-cta-btn {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 11pt;
     line-height: 25px;
     color: #FFFFFF;
     text-decoration: none;
@@ -564,15 +576,24 @@ footer {
     align-items: center
 }
 
-.general-hero-cont .left {
+.general-hero-cont .left-login {
     color: white;
     display: flex;
     flex-direction: column;
-    height: 120%;
     justify-content: center;
+    height: 100%;
 }
 
-.general-hero-cont .left h1 {
+
+
+.general-hero-cont .left-login h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.general-hero-cont .left-login h1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -585,7 +606,7 @@ footer {
     color: #FFFFFF;
 }
 
-.general-hero-cont .left h4 {
+.general-hero-cont .left-login h4 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -596,7 +617,7 @@ footer {
 
 }
 
-.general-hero-cont .left p {
+.general-hero-cont .left-login p {
     width: 80%;
     font-family: 'Noto Sans';
     font-style: normal;
@@ -608,7 +629,7 @@ footer {
     color: #FFFFFF;
 }
 
-.general-hero-cont .left a{
+.general-hero-cont .left-login a {
     color: #FFFFFF;
     font-family: 'Noto Sans';
     font-style: normal;
@@ -618,58 +639,77 @@ footer {
     letter-spacing: 0.07em
 }
 
+
+
+
+
+
+
+
 .general-hero-cont .right .login-card {
     width: 470px;
     height: 100%;
     background-color: #ffffff;
     padding: 50px;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: space-between
-}
 
 
-.general-hero-cont .right .login-card p {
-    width: 70%;
-    margin: auto;
-    font-weight: 600;
-    font-size: 21px;
-    line-height: 175.2%;
-    /* or 37px */
 
-    text-align: center;
 
-    color: #1E1E1E;
-}
 
-.general-hero-cont .right .login-card p span {
-    padding: 0px;
-}
 
-.general-hero-cont .right .login-card p img {
-    transform: translateY(2px);
-    width: 110px;
-    height: 22px;
 }
 
 .general-hero-cont .right .login-card div {
-    width: 100%;
+
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.general-hero-cont .right .login-card .semi-header {
+    width: 60%;
+    margin: auto;
+    font-weight: 600;
+    font-size: 12pt;
+    line-height: 175.2%;
+    text-align: center;
+    color: #1E1E1E;
+}
+
+.general-hero-cont .right .login-card .semi-header span {
+    padding: 0px;
+}
+
+.general-hero-cont .right .login-card .semi-header img {
+    transform: translateY(2.5px);
+    width: 100px;
+    height: 19px;
+}
+
+.general-hero-cont .right .login-card .forms {
+    width: 100%;
     flex-direction: column;
+    margin: 20px 0px;
 
 }
 
-.general-hero-cont .right .login-card div label {
-    margin-top: 10px;
+.general-hero-cont .right .login-card .forms label {
+    margin-top: 25px;
+    font-size: 11pt;
+
+    padding: 10px 0px;
 }
 
-.general-hero-cont .right .login-card div input {
+
+.general-hero-cont .right .login-card .forms input {
     padding: 10px 20px;
+    width: 100%;
+    margin-bottom:10px ;
     border: none;
     border-bottom: solid 1px gray;
+    background-color: #00000000;
 }
 
 .general-hero-cont .right .login-card button {
@@ -679,18 +719,13 @@ footer {
     border: none;
     border-radius: 40px;
     padding: 10px;
-    font-size: 15pt;
+    font-size: 11pt;
     color: white;
 }
 
-.general-hero-cont .right .login-card span {
-    color: black;
-    padding: 20px;
-}
-
-.general-hero-cont .right .login-card span a {
-    color: black;
+.general-hero-cont .right .login-card div > span > a  {
     font-weight: 600;
+color: black;
 }
 
 
@@ -707,18 +742,210 @@ footer {
 
 
 
+/* REGISTRATION HTML */
+
+.general-hero-bg .general-hero-cont .left-reg>a {
+    color: white;
+    font-family: 'Inter';
+}
+
+.general-hero-bg .general-hero-cont .left-reg {
+    color: white;
+}
+
+.general-hero-bg .general-hero-cont .left-reg h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.general-hero-bg .general-hero-cont .left-reg h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+}
+
+
+
+.form-grid {
+    font-family: 'Inter';
+    margin-top: 50px;
+}
+
+
+.form-grid>div {
+    grid-column: 1/9;
+}
+
+.form-grid>div {
+    grid-column: 1/9;
+}
+
+.form-grid h3 {
+    font-size: 20pt;
+    margin: 75px 0px 20px 0px;
+    grid-column: 1/9;
+    font-family: 'Inter';
+}
+
+.form-grid h3 span {
+    color: #29711D;
+}
+
+.form-grid span label {
+    font-weight: 500;
+    font-size: 12pt;
+}
+
+.form-grid span:nth-child(3) {
+    grid-column: 1/4;
+}
+
+.form-grid span:nth-child(4) {
+    grid-column: 1/3;
+}
+
+.form-grid span:nth-child(5) {
+    grid-column: 3/5;
+}
+
+.form-grid span:nth-child(6) {
+    grid-column: 5/7;
+}
+
+.form-grid span:nth-child(7) {
+    grid-column: 7/9;
+}
+
+.form-grid span:nth-child(8) {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form-grid span:nth-child(8)>input {
+    padding: 0;
+    width: auto;
+}
+
+.form-grid span:nth-child(9) {
+    grid-column: 4/6;
+}
+
+.form-grid span:nth-child(10) {
+    grid-column: 6/8;
+}
+
+.form-grid span:nth-child(11) {
+    grid-column: 1/4;
+}
+
+
+
+.form-grid span:nth-child(11),
+.form-grid span:nth-child(13),
+.form-grid span:nth-child(15) {
+    grid-column: 1/4;
+}
+
+.form-grid span:nth-child(12),
+.form-grid span:nth-child(14),
+.form-grid span:nth-child(16) {
+    grid-column: 4/7;
+}
+
+.form-grid span>.gender-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+
+}
+
+
+.form-grid span input,
+.form-grid span>select {
+    margin: 10px 0px;
+    padding: 10px;
+    width: 100%;
+    border: solid lightgray 2px;
+    border-radius: 100px;
+}
+
+
+.form-grid span:nth-child(18),
+.form-grid span:nth-child(20) {
+    grid-column: 1/7;
+}
+
+.form-grid span:nth-child(19),
+.form-grid span:nth-child(21) {
+    grid-column: 7/9;
+}
 
 
 
 
+.form-grid span:nth-child(23) {
+    grid-column: 1/5;
+}
+
+.form-grid span:nth-child(24) {
+    grid-column: 5/8;
+}
+
+.form-grid span:nth-child(25) {
+    grid-column: 1/8;
+}
+
+.form-grid span:nth-child(27),
+.form-grid span:nth-child(31),
+.form-grid span:nth-child(35) {
+    grid-column: 1/4;
+}
+
+.form-grid span:nth-child(28),
+.form-grid span:nth-child(32),
+.form-grid span:nth-child(36) {
+    grid-column: 4/6;
+}
+
+.form-grid span:nth-child(29),
+.form-grid span:nth-child(33) {
+    grid-column: 6/8;
+}
+
+.set-guardian {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 60%;
+}
+
+
+.form-grid span:nth-child(30),
+.form-grid span:nth-child(34),
+.form-grid span:nth-child(37) {
+    grid-column: 1/7;
+}
+
+.form-grid button {
+    margin-top: 100px;
+    grid-column: 3/7;
+    padding: 20px;
+    background-color: #29711D;
+    color: white;
+    border: none;
+}
 
 
 
-
-
-
-
-
+.form-grid .guardianfield {
+    display: block;
+}
 
 
 
@@ -738,6 +965,13 @@ footer {
         font-style: normal;
         font-weight: 500;
         font-size: 11pt;
+
+    }
+
+    .upper-nav-bar {
+
+        height: 50px;
+
 
     }
 }
